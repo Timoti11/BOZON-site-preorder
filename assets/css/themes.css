@@ -1,0 +1,20 @@
+.theme-light {
+    --main: #5E72E4;
+    --second: #0083FF;
+    --anim: #8EF4FF;
+    --def1: #117FEF;
+    --def2: #11A4EF;
+    --flex1: #FAA840;
+    --flex2: #F67940;
+    --shadow: 0, 54, 98;
+ }
+ .theme-dark {
+    --main: #191919;
+    --second: #131313;
+    --anim: #2DCE89;
+    --def1: #117FEF;
+    --def2: #11A4EF;
+    --flex1: #FAA840;
+    --flex2: #F67940;
+    --shadow: 45, 56, 74;
+ }
