@@ -84,15 +84,16 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
 }
 
 .card {
     width: 400px;
-    height: 500px;
+    height: 520px;
     margin: 0 50px;
     margin-bottom: 30px;
     border: 0;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .def {
@@ -200,15 +201,7 @@ p {
 .btn-primary {
     background-color: #5E72E4;
     padding: 12px 55px;
-}
-
-.flex .btn-primary {
-    background-color: #FAC640;
     border: none;
-}
-
-.flex .btn-primary:hover {
-    background-color: #ebb11f;
 }
 
 .btns {
@@ -227,7 +220,24 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.3px;
+    letter-spacing: 1px;
+}
+
+.flex .btn-txt {
+    background-color: #f9c54b;
+}
+
+.flex .btn-txt:hover {
+    background-color: #ebb11f;
+}
+
+.flex .btn-txt:active {
+    background-color: #ebb11f!important;
+}
+
+.flex .btn-txt:focus {
+    background-color: #d4a01c!important;
+    box-shadow: none!important;
 }
 
 .flex .back-btn, .def .back-btn {
@@ -275,22 +285,153 @@ p {
     border: 1px solid var(--flex1);
 }
 
-@media only screen and (max-width: 768px) {
-    .card-div {
-        flex-direction: column;
+.price {
+    margin-top: 25px;
+}
+
+.price-txt {
+    font-size: 40px;
+}
+
+.price-desc {
+    font-size: 16px;
+    line-height: 10px;
+    font-weight: 500;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+    color: #FFF;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+#ac:before {
+    background-image: url(../img/icons/ac.svg);
+}
+
+#chat:before {
+    background-image: url(../img/icons/chat.svg);
+}
+
+#up:before {
+    background-image: url(../img/icons/up.svg);
+}
+
+#badge:before {
+    background-image: url(../img/icons/badge.svg);
+}
+
+li::before {
+    float: left;
+    content: '';
+    margin-right: 16px;
+    background-size: 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.gold {
+    font-weight: 600;
+}
+
+.open {
+    display: flex;
+    justify-content: center;
+}
+
+.open .btn {
+    vertical-align: bottom;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.progress-wrapper {
+    width: 50vw;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-percentage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-percentage p {
+    font-size: 16px;
+}
+
+.bg-primary {
+    background-color: var(--ac)!important;
+}
+
+.progress-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 5s ease-in-out 0.07s infinite;
+  }
+
+  @keyframes movingFlare {
+    100% {
+      left: -30px;
+      margin-left: 0px;
     }
-    .card {
-        width: 90vw;
+    70% {
+      left: 110%;
+      margin-left: 80px;
     }
-    .break {
-        flex-basis: 10%;
-        height: 0;
+    0% {
+      left: 110%;
+      margin-left: 80px;
     }
-    .fix {
-        width: 100%;
-        height: 50px;
-    }
-    .logo {
-        width: 256px;
-    }
+  }
+
+  .in_txt_img {
+	display: inline-block;
+	height: 24px;
+	width: 70px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+	margin: 0 10px;
+    margin-top: 4px;
+	background-image: url(../img/icons/flexer.webp);
 }

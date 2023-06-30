@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+    .card-div {
+        flex-direction: column;
+    }
+    .card {
+        width: 90vw;
+    }
+    .break {
+        flex-basis: 10%;
+        height: 0;
+    }
+    .fix {
+        width: 100%;
+        height: 50px;
+    }
+    .logo {
+        width: 256px;
+    }
+}

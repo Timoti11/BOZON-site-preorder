@@ -6,6 +6,7 @@
     --def2: #11A4EF;
     --flex1: #FAA840;
     --flex2: #F67940;
+    --ac: #FAA840;
     --shadow: 0, 54, 98;
  }
  .theme-dark {
@@ -16,5 +17,6 @@
     --def2: #11A4EF;
     --flex1: #FAA840;
     --flex2: #F67940;
+    --ac: #2DCE89;
     --shadow: 45, 56, 74;
  }
