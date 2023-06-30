@@ -389,8 +389,12 @@ li::before {
 }
 
 .progress-bar {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+  }
+
+.progress {
+    border-radius: 40px;
 }
 
 .progress-bar:after {
