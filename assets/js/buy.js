@@ -38,3 +38,4 @@ $('#buy-2-back').click(function() {
         'display': 'none'
     });
 });
+/* скрипт говна */
