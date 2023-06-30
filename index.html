@@ -45,7 +45,7 @@
             <div class="name">
               <p class="txt">Дефолт</p>
             </div>
-            <div class="layer-1">
+            <div class="layer-1" id="layer-1" style="display: block; visibility: visible;">
               <div class="price">
                 <p class="price-txt">350₽</p>
                 <p class="price-desc">на сезон</p>
@@ -60,44 +60,48 @@
                 </ul>
               </div>
               <div class="open">
-                  <a><button class="btn btn-primary btn-txt" onclick="this.blur();">Оплатить</button></a>
+                  <a><button class="btn btn-primary btn-txt" onclick="this.blur();" id="buy-1">Выбрать</button></a>
               </div>
             </div>
-            <!--
-            <form class="2-layer">
-              <div class="input">
 
-                <div class="input-group input-group-alternative mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-nick"></i></span>
+
+            <div class="layer-2" id="layer-2" style="display: none; visibility: hidden;">
+              <form>
+                <div class="input">
+
+                  <div class="input-group input-group-alternative mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-nick"></i></span>
+                    </div>
+                    <input class="form-control-alternative field" placeholder="Никнейм в игре" type="text">
                   </div>
-                  <input class="form-control-alternative field" placeholder="Никнейм в игре" type="text">
-                </div>
-                <div class="input-group input-group-alternative mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-cpn"></i></span>
+                  <div class="input-group input-group-alternative mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-cpn"></i></span>
+                    </div>
+                    <input class="form-control-alternative field" placeholder="Промокод (если есть)" type="text">
                   </div>
-                  <input class="form-control-alternative field" placeholder="Промокод (если есть)" type="text">
-                </div>
-                <div class="rules">
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input class="custom-control-input" id="customCheck1" type="checkbox">
-                    <label class="custom-control-label" for="customCheck1"></label>
-                    <p class="ok">Соглашаюсь с <span  class="link"><a href="#">правилами сервера</a></span> и <span  class="link"><a href="#">офертой</a></span></p>
+                  <div class="rules">
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input class="custom-control-input" id="customCheck1" type="checkbox">
+                      <label class="custom-control-label" for="customCheck1"></label>
+                      <p class="ok">Соглашаюсь с <span  class="link"><a href="#">правилами сервера</a></span> и <span  class="link"><a href="#">офертой</a></span></p>
+                    </div>
                   </div>
                 </div>
+                <div class="btns">
+                  <div class="enter">
+                    <button class="btn btn-primary btn-txt ">Оплатить</button>
+                  </div>
+                </div>
+              </form>
+              <div class="back">
+                <a><button class="btn btn-primary back-btn btn-txt" onclick="this.blur();" id="buy-1-back">Назад</button></a>
               </div>
-              <div class="btns">
-                <div class="enter">
-                  <a><button class="btn btn-primary btn-txt ">Оплатить</button></a>
-                </div>
-                <div class="back">
-                  <a><button class="btn btn-primary back-btn btn-txt">Назад</button></a>
-                </div>
-              </div>
-            </form>
-            -->
+            </div>
           </div>
+
+
           <div class="break"></div>
 
 
@@ -105,7 +109,7 @@
             <div class="name">
               <p class="txt">Флексер</p>
             </div>
-            <div class="layer-1">
+            <div class="layer-1_2" id="layer-1_2" style="display: block; visibility: visible;">
               <div class="price">
                 <p class="price-txt">600₽</p>
                 <p class="price-desc">на сезон</p>
@@ -120,43 +124,44 @@
                 </ul>
               </div>
               <div class="open">
-                  <a><button class="btn btn-primary btn-txt" onclick="this.blur();">Оплатить</button></a>
+                  <a><button class="btn btn-primary btn-txt" onclick="this.blur();" id="buy-2">Выбрать</button></a>
               </div>
             </div>
-            <!--
-            <form class="2-layer">
-              <div class="input">
 
-                <div class="input-group input-group-alternative mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-nick"></i></span>
+            <div class="layer-2_2" id="layer-2_2" style="display: none; visibility: hidden;">
+              <form>
+                <div class="input">
+
+                  <div class="input-group input-group-alternative mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-nick"></i></span>
+                    </div>
+                    <input class="form-control-alternative field" placeholder="Никнейм в игре" type="text">
                   </div>
-                  <input class="form-control-alternative field" placeholder="Никнейм в игре" type="text">
-                </div>
-                <div class="input-group input-group-alternative mb-4">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-cpn"></i></span>
+                  <div class="input-group input-group-alternative mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-cpn"></i></span>
+                    </div>
+                    <input class="form-control-alternative field" placeholder="Промокод (если есть)" type="text">
                   </div>
-                  <input class="form-control-alternative field" placeholder="Промокод (если есть)" type="text">
-                </div>
-                <div class="rules">
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input class="custom-control-input" id="customCheck1" type="checkbox">
-                    <label class="custom-control-label" for="customCheck1"></label>
-                    <p class="ok">Соглашаюсь с <span  class="link"><a href="#">правилами сервера</a></span> и <span  class="link"><a href="#">офертой</a></span></p>
+                  <div class="rules">
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input class="custom-control-input" id="customCheck2" type="checkbox">
+                      <label class="custom-control-label" for="customCheck2"></label>
+                      <p class="ok">Соглашаюсь с <span  class="link"><a href="#">правилами сервера</a></span> и <span  class="link"><a href="#">офертой</a></span></p>
+                    </div>
                   </div>
                 </div>
+                <div class="btns">
+                  <div class="enter">
+                    <a><button class="btn btn-primary btn-txt ">Оплатить</button></a>
+                  </div>
+                </div>
+              </form>
+              <div class="back">
+                <a><button class="btn btn-primary back-btn btn-txt" onclick="this.blur();" id="buy-2-back">Назад</button></a>
               </div>
-              <div class="btns">
-                <div class="enter">
-                  <a><button class="btn btn-primary btn-txt ">Оплатить</button></a>
-                </div>
-                <div class="back">
-                  <a><button class="btn btn-primary back-btn btn-txt">Назад</button></a>
-                </div>
-              </div>
-            </form>
-            -->
+            </div>
           </div>
 
 
@@ -198,6 +203,7 @@
   <script src="./assets/js/bvambient.js"></script>
   <script src="./assets/js/anim_bg.js"></script>
   <script src="./assets/js/themes.js"></script>
+  <script src="./assets/js/buy.js"></script>
 </body>
 
 </html>

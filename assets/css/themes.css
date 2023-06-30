@@ -1,5 +1,6 @@
 .theme-light {
     --main: #5E72E4;
+    --main_a: 94, 114, 228;
     --second: #0083FF;
     --anim: #8EF4FF;
     --def1: #117FEF;
@@ -11,6 +12,7 @@
  }
  .theme-dark {
     --main: #191919;
+    --main_a: 25, 25, 25;
     --second: #131313;
     --anim: #2DCE89;
     --def1: #117FEF;

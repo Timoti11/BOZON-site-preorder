@@ -218,7 +218,7 @@ p {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: 1px;
 }
@@ -242,15 +242,20 @@ p {
 
 .flex .back-btn, .def .back-btn {
     margin-top: 10px;
-    background-color: transparent;
+    background-color: rgba(var(--main_a), 0.4);
     border: 0px;
     box-shadow: none;
     outline: none;
     font-size: 12px;
 }
 
+.back {
+    display: flex;
+    justify-content: center;
+}
+
 .back-btn:hover {
-    background-color: transparent;
+    background-color: rgba(var(--main_a), 0.8);
     border: 0px;
     box-shadow: none;
     outline: none;
@@ -424,7 +429,7 @@ li::before {
     }
   }
 
-  .in_txt_img {
+.in_txt_img {
 	display: inline-block;
 	height: 24px;
 	width: 70px;
@@ -434,4 +439,16 @@ li::before {
 	margin: 0 10px;
     margin-top: 4px;
 	background-image: url(../img/icons/flexer.webp);
+}
+
+.layer-2,
+.layer-2_2 {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    top: 145px;
 }
