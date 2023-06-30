@@ -15,10 +15,10 @@ a:hover {
 p {
     color: #FFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-family: Inter;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 28px;
     letter-spacing: 1px;
 }
@@ -107,7 +107,17 @@ p {
 }
 
 .txt {
-    margin-top: 55px;
+    margin-top: 20px;
+}
+
+.name {
+    border-bottom: 2px solid #00000008;
+    margin-bottom: 20px;
+}
+
+.flex .name {
+    border-bottom: 2px solid #00000008;
+    margin-bottom: 20px;
 }
 
 .input {
@@ -249,6 +259,10 @@ p {
     font-size: 12px;
 }
 
+.flex .back-btn {
+    background-color: #f9c54b70;
+}
+
 .back {
     display: flex;
     justify-content: center;
@@ -296,6 +310,7 @@ p {
 
 .price-txt {
     font-size: 40px;
+    font-weight: 600;
 }
 
 .price-desc {
