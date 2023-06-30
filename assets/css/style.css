@@ -87,6 +87,7 @@ p {
 }
 
 .card {
+    min-height: 520px;
     width: 400px;
     margin: 0 50px;
     margin-bottom: 30px;
@@ -208,7 +209,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .btn-txt {
@@ -447,7 +448,6 @@ li::before {
 .layer-2,
 .layer-2_2 {
     width: 100%;
-    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: column;
