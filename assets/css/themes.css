@@ -9,6 +9,8 @@
     --flex2: #F67940;
     --ac: #FAA840;
     --shadow: 0, 54, 98;
+    --oferta: white;
+    --font: black;
  }
  .theme-dark {
     --main: #191919;
@@ -21,4 +23,6 @@
     --flex2: #a04218;
     --ac: #2DCE89;
     --shadow: 45, 56, 74;
+    --oferta: #131313;
+    --font: white;
 }
