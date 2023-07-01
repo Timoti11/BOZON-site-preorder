@@ -1,3 +1,4 @@
+/* Плашки */
 $('#buy-1').click(function() {
     $('#layer-1').css({
         'visibility': 'hidden',
@@ -39,3 +40,13 @@ $('#buy-2-back').click(function() {
     });
 });
 /* скрипт говна */
+
+/* Ошибка */
+
+var blockHidden = document.querySelector('.alert');
+
+$('#rules-1').click(function() {
+    console.log('1')
+    blockHidden.classList.add('alert-on');
+    setTimeout(() => blockHidden.classList.add('alert-off'), 5000);
+});

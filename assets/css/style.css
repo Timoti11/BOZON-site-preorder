@@ -15,12 +15,13 @@ a:hover {
 p {
     color: #FFF;
     text-align: center;
-    font-size: 28px;
     font-family: Inter;
     font-style: normal;
-    font-weight: 700;
     line-height: 28px;
     letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .top {
@@ -186,11 +187,13 @@ p {
 .custom-control-label::before {
     width: 20px;
     height: 20px;
+    top: -0.875rem;
 }
 
 .custom-control-label::after {
     width: 20px;
     height: 20px;
+    top: -0.875rem;
 }
 
 .ok {
@@ -201,6 +204,7 @@ p {
     font-weight: 500;
     display: inline-block;
     letter-spacing: 0;
+    text-transform: none;
 }
 
 .link {
@@ -356,6 +360,26 @@ li {
     background-image: url(../img/icons/badge.svg);
 }
 
+#hat:before {
+    background-image: url(../img/icons/hat.svg);
+}
+
+#fx:before {
+    background-image: url(../img/icons/fx.svg);
+}
+
+#color:before {
+    background-image: url(../img/icons/color.svg);
+}
+
+#old:before {
+    background-image: url(../img/icons/old.svg);
+}
+
+#prefix:before {
+    background-image: url(../img/icons/prefix.svg);
+}
+
 li::before {
     float: left;
     content: '';
@@ -410,6 +434,7 @@ li::before {
 
 .progress {
     border-radius: 40px;
+    height: 17px;
 }
 
 .progress-bar:after {
@@ -470,3 +495,54 @@ li::before {
     transform: translateX(-50%);
     top: 145px;
 }
+
+.flex ul li:before {
+    background-color: #e5b3a0;
+}
+.def ul li:before {
+    background-color: #71b9f7;
+}
+.def  ul li:before, .flex ul li:before {
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+.alert-on {
+    animation: showBlock 0.2s linear forwards;
+}
+
+.alert-off {
+    animation: hideBlock 0.2s linear forwards;
+  }
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+      top: -50px;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+}
+
+@keyframes hideBlock {
+    100% {
+      opacity: 0;
+      top: -50px;
+    }
+    0% {
+      opacity: 1;
+      top: 0;
+    }
+  }
